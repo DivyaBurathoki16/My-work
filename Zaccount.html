@@ -1,0 +1,91 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: sans-serif;
+			line-height: 1.5;
+			min-height: 100vh;
+			background: Black;
+			flex-direction: column;
+			margin: 0;
+		}
+		
+		.main {
+			background-color: white;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			padding: 10px 20px;
+			transition: transform 0.2s;
+			width: 500px;
+			text-align: center;
+		}
+		
+		label {
+			display: block;
+			width: 100%;
+			margin-top: 10px;
+			margin-bottom: 5px;
+			text-align: left;
+			color: #555;
+			font-weight: bold;
+            font-family: 'Times New Roman';
+		}
+		
+		input {
+			display: block;
+			width: 100%;
+			margin-bottom: 15px;
+			padding: 10px;
+			box-sizing: border-box;
+			border: 1px solid black;
+			border-radius: 5px;
+		}
+		
+		button {
+			padding: 15px;
+			border-radius: 10px;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			border: none;
+			color: white;
+			cursor: pointer;
+			background-color: Black;
+			width: 100%;
+			font-size: 16px;
+		}
+        .button:hover{background-color: powderblue;
+         color:black;}
+		
+		.wrap {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+</style>
+<body>
+    <div class="main">
+        <h1> Create Account</h1>
+        <form>
+            <label for="Name">Username:</label>
+			<input type="text" id="Name" name="Name" placeholder="Enter Your Full Name" required>
+            <label for="Email">Email:</label>
+			<input type="email" id="Email" name="Email" placeholder="Enter a valid Email" required>
+            <label for="Age">Age:</label>
+			<input type="number" id="Age" name="Age" placeholder="Enter your age" required>
+            <label for="Password">Password:</label>
+			<input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <div class="wrap">
+				<button type="submit">SUBMIT</button>
+			</div>
+        </form>
+    </div>
+</body>
+</html>

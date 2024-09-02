@@ -1,0 +1,58 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Home Page</title>
+	<style>
+		body {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: sans-serif;
+			line-height: 1.5;
+			min-height: 100vh;
+			background: black;
+			flex-direction: column;
+			margin: 0;
+		}
+		
+		.home {
+			background-color: #fff;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+			padding: 20px;
+			transition: transform 0.2s;
+			width: 500px;
+			text-align: center;
+		}
+		
+		h1 {
+			margin-bottom: 20px;
+		}
+		
+		.Button {
+			padding: 15px;
+			border-radius: 10px;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			border: none;
+			color: white;
+			cursor: pointer;
+			background-color: black;
+			width: 100%;
+			font-size: 16px;
+		}
+		
+		.Button:hover {
+			background-color: powderblue;
+			color:black;
+		}
+	</style>
+</head>
+<body>
+	<div class="home">
+		<h1>Welcome to Our Website</h1>
+		<p>To continue with our website You must first Login.</p>
+		<button class="Button" onclick="window.location.href='LoginPage.html'">Login</button>
+	</div>
+</body>
+</html>
